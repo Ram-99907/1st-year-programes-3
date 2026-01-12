@@ -1,22 +1,28 @@
-#include <stdio.h>
+# Student Management System (C)
 
-struct Student { int roll; char name[50]; float marks; };
+This is a simple C program that accepts student details and displays them.
 
-int main() { struct Student s;
+## Details Collected
+- Roll Number
+- Name
+- Marks
 
-printf("Enter  the roll Number: ");
-scanf("%d", &s.roll);
+## Purpose
+This project is created to understand basic input and output operations in C.
 
-printf("Enter Namee: ");
-scanf(" %[^\n]", s.name);
+## Concepts Used
+- Variables
+- printf() and scanf()
+- Basic C program structure
 
-printf("Enter Marks: ");
-scanf("%f", &s.marks);
+## How to Run
+1. Compile the program:
+   gcc main.c
+2. Run the executable file.
 
-printf("\n--- Student Details ---\n");
-printf("Roll Number : %d\n", s.roll);
-printf("Name        : %s\n", s.name);
-printf("Marks       : %.2f\n", s.marks);
+## Sample Output
+Enter Roll Number: 101  
+Enter Name: Karthik  
+Enter Marks: 85.5  
 
-return 0;
-}
+Student details are displayed on the screen.
